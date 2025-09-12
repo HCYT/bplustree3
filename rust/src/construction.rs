@@ -13,7 +13,7 @@ use std::marker::PhantomData;
 pub type InitResult<T> = BTreeResult<T>;
 
 /// Default capacity for B+ tree nodes
-pub const DEFAULT_CAPACITY: usize = 16;
+pub const DEFAULT_CAPACITY: usize = 128;
 
 impl<K, V> BPlusTreeMap<K, V> {
     /// Create a B+ tree with specified node capacity.
